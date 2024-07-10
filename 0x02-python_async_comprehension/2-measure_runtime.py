@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 
 """
-This module contains a coroutine that measures the runtime of executing
-async_comprehension four times in parallel.
+This module contains a coroutine that measures 
+the runtime of executing async_comprehension
+four times in parallel.
 """
 
 import asyncio
