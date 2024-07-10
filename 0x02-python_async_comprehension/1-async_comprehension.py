@@ -2,7 +2,7 @@
 
 """
 This module contains a coroutine that collects
-10 random numbers using an async comprehension 
+10 random numbers using an async comprehension
 over async_generator and returns the collected
 numbers.
 """
@@ -12,6 +12,7 @@ from typing import List
 
 # Dynamically import the async_generator from 0-async_generator.py
 async_generator = __import__('0-async_generator').async_generator
+
 
 async def async_comprehension() -> List[float]:
     """
