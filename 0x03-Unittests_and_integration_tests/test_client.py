@@ -142,3 +142,12 @@ class TestIntegrationGithubOrgClient(unittest.TestCase):
         self.assertEqual(
             client.public_repos(license="apache-2.0"), fixtures.apache2_repos
         )
+
+    def test_public_repos_with_license(self):
+        """
+        Test the public_repos method returns
+        repos with a specific license.
+        """
+        client = GithubOrgClient("google")
+        result = client.public_repos(license="apache-2.0")
+        self.assertEqual(result, self.apache2_repos)
